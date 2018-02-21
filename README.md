@@ -13,16 +13,16 @@ Whether you work in an organization that uses test-driven development or in an o
 ## Tests
 
 RSS Feeds:
-* Feeds are Defined and are not empty
-* Feed URL is defined and is not empty
-* Feed name is defined and is not empty
+* Test to make sure that the allFeeds variable has been defined and that it is not empty
+* Test loops through each feed in the allFeeds object and ensures that the URL is defined and it is not empty.
+* Test loops through each feed in the allFeeds object and ensures that the name is defined and it is not empty.
 
 The Menu:
-* The menu is hidden by default
-* Toggles visibility of menu on click
+* Test ensures that the menu element is hidden by default
+* Test ensures that the menu icon toggles visibility(hide/show) on click
 
 Initial Entries:
-* Feed container has at least 1 entry
+* Test ensures that when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container.
 
 New Feed Selection:
-* Feed content changes when new feed is selected
+* Test ensures that when a new feed is loaded by the loadFeed function, the content actually changes.
